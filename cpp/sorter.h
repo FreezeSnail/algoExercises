@@ -12,12 +12,12 @@ class Sorter {
 
         Sorter(int * arr, int len): array(arr), length(len){}
 
-        int * insertionSort();
+        int * insertionSort(); //O(n^2)
         int * insertionSortDecrease();
 
         int getLength();
         int * getArr();
 
-        int * mergeSort();
+        int * mergeSort();  //O(nlgn)
         
 };
