@@ -97,3 +97,60 @@
 ### Example 16
     O(ln N)
 
+
+### VI.1
+    O(b)
+
+### VI.2
+    O(b)
+
+### VI.3
+    O(1)
+
+### VI.4 X
+    O(a) X
+    O(a/b) -> was considering worse case where b = 1
+
+### VI.5
+    O(ln n)
+
+### VI.6 X
+    O(n)  X -> O(sqrt(n))
+    will only go from 1 to root(n) hence root(n)
+
+### VI.7
+    O(n)
+    Worst case is all nodes are along a single branches path like a LL
+
+### VI.8
+    O(n) ?  if theres no ordering then you would need to check each node.
+    you could sort the tree into a proper binary search tree and then search -> O(n ln n)
+
+### VI.9
+    1 + 2 + 3 + ... + n -> n(n-1)/2 -> O(n^2)
+
+### VI.10
+    O(ln2 n) -> ~O(number of digits)
+
+### VI.11 X
+    ithLetter -> O(1)
+    isInOrder -> O(string length)
+    printSortedStrings
+        base ->O(26) + 
+        
+
+    O(1)?  always builds the same 26 letter string.  XX
+        to generate each string -> O(c^k) where c is the number of characters and k is the length of the string
+
+        O(c^k) * isInOrder = O(k)
+        O(k*c^k)
+
+        c is given as 26 -> O(k)
+
+
+
+
+### VI.12 X
+    O(n ln n) + O(ln n) -> O(n ln n) X
+    O(b ln b) + O(a ln b)  -> didnt consider the 2 different array lengths
+        note: a ln b comes from a numbers searched in the b length array
